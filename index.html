@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Para cuando lo necesites, Andre</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+--bg:#fbf7fb;--ink:#3b2a4d;--soft:#7a6a8a;--card:#ffffffcc;--line:#e8dcef;--btn:#6d4a8f;--btnh:#5a3b79;--btntx:#fff;--pet:.85}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1d1526;--ink:#f1e8f6;--soft:#b9a8c9;--card:#2a1f36cc;--line:#43355a;--btn:#c9a2e8;--btnh:#dbb9f2;--btntx:#2a1f36;--pet:.55}}
+:root[data-theme="dark"]{--bg:#1d1526;--ink:#f1e8f6;--soft:#b9a8c9;--card:#2a1f36cc;--line:#43355a;--btn:#c9a2e8;--btnh:#dbb9f2;--btntx:#2a1f36;--pet:.55}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*:before,*:after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Nunito,system-ui,sans-serif;line-height:1.6;min-height:100vh;overflow-x:hidden}
+.poppy{position:fixed;pointer-events:none;z-index:0;opacity:var(--pet)}
+.poppy svg{display:block;width:100%;height:auto}
+.pu{color:#9a74c9}.pk{color:#ec93b8}.lv{color:#b9a0e6}
+main{position:relative;z-index:1;max-width:560px;margin:0 auto;padding:56px 24px 40px;text-align:center}
+.for{font-size:.95rem;color:var(--soft);margin:0 0 14px;letter-spacing:.02em}
+h1{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;font-size:clamp(2.1rem,9vw,3.2rem);line-height:1.1;margin:0 0 18px}
+.lead{font-family:'Cormorant Garamond',Georgia,serif;font-style:italic;font-size:1.35rem;color:var(--soft);margin:0 0 36px}
+.stage{min-height:230px;display:flex;align-items:center;justify-content:center;margin-bottom:28px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:30px 24px;width:100%;backdrop-filter:blur(6px)}
+.card.empty{background:none;border:1px dashed var(--line);color:var(--soft)}
+.quote{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(1.45rem,6vw,1.85rem);line-height:1.3;font-weight:500;margin:0}
+.author{margin:16px 0 0;color:var(--soft);font-size:.95rem}
+.show{animation:in .8s cubic-bezier(.2,.7,.2,1) both}
+@keyframes in{from{opacity:0;transform:translateY(14px) scale(.97);filter:blur(5px)}to{opacity:1;transform:none;filter:none}}
+button{font:inherit;font-weight:700;font-size:1.15rem;background:var(--btn);color:var(--btntx);border:0;border-radius:999px;padding:18px 34px;width:100%;max-width:360px;cursor:pointer;box-shadow:0 8px 24px #6d4a8f40;transition:transform .15s,background .15s}
+button:hover{background:var(--btnh)}button:active{transform:scale(.97)}
+button:focus-visible{outline:3px solid #ec93b8;outline-offset:3px}
+.breathe{margin:26px auto 0;max-width:340px;color:var(--soft);font-size:.98rem}
+.final{margin-top:64px;padding-top:36px;border-top:1px solid var(--line)}
+.final h2{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.9rem;margin:0 0 10px}
+.final p{margin:0 auto;max-width:400px;color:var(--soft)}
+@media (prefers-reduced-motion:reduce){.show{animation:none}button{transition:none}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="p" viewBox="0 0 100 170">
+<path d="M50 62C44 100 58 130 48 170" stroke="#6f9a6b" stroke-width="3" fill="none" stroke-linecap="round"/>
+<path d="M52 118C70 108 80 112 86 100C72 98 60 104 52 118Z" fill="#8fb58a"/>
+<g fill="currentColor"><circle cx="50" cy="26" r="19" opacity=".9"/><circle cx="66" cy="42" r="19" opacity=".85"/><circle cx="50" cy="58" r="19" opacity=".9"/><circle cx="34" cy="42" r="19" opacity=".85"/></g>
+<circle cx="50" cy="42" r="12" fill="#fff" opacity=".18"/><circle cx="50" cy="42" r="6" fill="#3b2a4d"/>
+<g fill="#3b2a4d"><circle cx="50" cy="31" r="1.6"/><circle cx="61" cy="42" r="1.6"/><circle cx="50" cy="53" r="1.6"/><circle cx="39" cy="42" r="1.6"/></g>
+</symbol>
+</svg>
+
+<div class="poppy pu" style="top:-10px;left:-18px;width:120px;transform:rotate(-14deg)"><svg><use href="#p"/></svg></div>
+<div class="poppy pk" style="top:70px;left:46px;width:70px;transform:rotate(10deg)"><svg><use href="#p"/></svg></div>
+<div class="poppy pk" style="top:-14px;right:-14px;width:105px;transform:rotate(16deg)"><svg><use href="#p"/></svg></div>
+<div class="poppy lv" style="top:90px;right:30px;width:60px;transform:rotate(-8deg)"><svg><use href="#p"/></svg></div>
+<div class="poppy lv" style="bottom:-30px;left:-10px;width:115px;transform:rotate(12deg)"><svg><use href="#p"/></svg></div>
+<div class="poppy pu" style="bottom:-24px;left:80px;width:68px;transform:rotate(-12deg)"><svg><use href="#p"/></svg></div>
+<div class="poppy pu" style="bottom:-28px;right:-8px;width:120px;transform:rotate(-16deg)"><svg><use href="#p"/></svg></div>
+<div class="poppy pk" style="bottom:-20px;right:84px;width:64px;transform:rotate(8deg)"><svg><use href="#p"/></svg></div>
+
+<main>
+  <p class="for">Para cuando lo necesites, Andre</p>
+  <h1>Para cuando necesites recordar que sí puedes 🌷</h1>
+  <p class="lead">No tienes que tener todo resuelto hoy.</p>
+
+  <div class="stage" aria-live="polite">
+    <div class="card empty" id="card"><p class="quote" style="font-size:1.25rem">Cuando lo necesites, presiona el botón.</p></div>
+  </div>
+
+  <button id="btn" type="button">🌷 Necesito leer algo ahora</button>
+  <p class="breathe">Respira. Lee esto con calma. No tienes que resolverlo todo hoy.</p>
+
+  <section class="final">
+    <h2>Para ti, Andre 🌷</h2>
+    <p>Un pequeño lugar al que puedes volver cuando necesites recordar que puedes seguir adelante, incluso cuando las cosas se sientan difíciles.</p>
+  </section>
+</main>
+
+<script>
+const Q=[
+["No hay viento favorable para el que no sabe dónde va.","Séneca"],
+["Uno conquista el mundo al conquistarse a sí mismo.","Zenón de Citio"],
+["Del fracaso se aprende, del éxito no mucho.","La familia del futuro"],
+["No importa lo lento que vayas mientras no te detengas.","Confucio"],
+["El futuro depende de lo que hagas hoy.","Mahatma Gandhi"],
+["Que hoy te cueste algo no significa que hayas dejado de ser capaz.",""],
+["La capacidad viene por las ganas.","Jorge Gonzales"],
+["Tu vida no la escribes con palabras. La escribes con acciones. Lo que piensas no es importante, sino lo que harás.","Patrick Ness"],
+["Cuanto mayor es el conocimiento inherente de una cosa, más grande es el amor.","Paracelso"],
+["No nos sentimos fuertes porque nos sabemos fuertes, sino porque nos sabemos amados.","Goethe"],
+["Fallar es parte del éxito. Si nadie falla, no se puede ser mejor.","Andrea Cisneros"],
+["Cuando el pasado ha sido un desengaño, el futuro es siempre, siempre una promesa.","Amado Nervo"],
+["Haz lo que quieras hacer. No vivas tu vida por nadie más.",""],
+["Nunca es demasiado tarde para ser la persona que quieres ser. Necesitas elegir la vida que quieres.",""],
+["Eres más valiente de lo que crees, más fuerte de lo que pareces y más inteligente de lo que piensas.","Christopher Robin"],
+["Si te centras en lo que dejas atrás, no podrás ver lo que tienes delante.","Ratatouille"],
+["¡Hakuna matata! Vive y sé feliz.",""],
+["Los tulipanes se ven delicados pero pueden florecer hasta en la nieve.","Andrea Cisneros"],
+["Mostrar vulnerabilidad no es malo.","Andrea Cisneros"],
+["Esta vida es pasajera. De un mundo que no descansa. Va adelante y en su marcha, siempre todo, todo cambia. Y solo tú lo puedes llevar.","David"],
+["Siempre parece imposible hasta que se hace.","Nelson Mandela"],
+["Los únicos derrotados en el mundo son los que dejan de luchar y de soñar.","Jorge Basadre"],
+["En realidad no es fácil vivir. Pero es hermoso. Y mientras más aligerado de fastidios (como la mentira), mucho mejor.","César Hildebrandt"],
+["La belleza subsiste en el recuerdo.",""],
+["Si aprendes de ti, dejarás de ser tan duro contigo mismo.","Evangelion"],
+["Que nadie te diga que pierdes el tiempo cuando tienes la mirada perdida en el vacío. No hay mejor manera de concebir un mundo imaginario.",""],
+["Sé tú mismo. Todos los demás ya están ocupados.","Oscar Wilde"],
+["No estás solo en esto; confía en ti y sigue adelante.",""],
+["En cada sonrisa tuya, encuentro un motivo para alegrarme. Gracias por llenar mi vida de risas y colores.",""],
+["No necesito que me salven. Soy perfectamente capaz de salvarme a mí misma.","Eloise Bridgerton"]
+];
+let deck=[],last=-1;
+function next(){
+  if(!deck.length){
+    deck=Q.map((_,i)=>i);
+    for(let i=deck.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[deck[i],deck[j]]=[deck[j],deck[i]]}
+    if(deck[deck.length-1]===last){deck.unshift(deck.pop())}
+  }
+  last=deck.pop();return Q[last];
+}
+const card=document.getElementById('card');
+document.getElementById('btn').addEventListener('click',()=>{
+  const [t,a]=next();
+  card.className='card';
+  card.innerHTML='';
+  const q=document.createElement('p');q.className='quote';q.textContent='“'+t+'”';
+  card.appendChild(q);
+  if(a){const p=document.createElement('p');p.className='author';p.textContent='— '+a;card.appendChild(p)}
+  void card.offsetWidth;
+  card.classList.add('show');
+});
+</script>
+</body>
+</html>
